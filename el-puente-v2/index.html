@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Puente Arte y Cultura</title>
+  <meta name="description" content="Colectivo de trabajadores que usa el arte como herramienta de transformación social. La Plata, Buenos Aires.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ORGANISMO: Header -->
+  <header class="header" role="banner">
+    <div class="contenedor">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="El Puente Arte y Cultura — Inicio">
+          <img src="assets/logo.png" alt="El Puente Arte y Cultura">
+        </a>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <ul class="nav__lista" role="list">
+            <li><a href="index.html"         class="nav__link nav__link--activo" aria-current="page">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="nav__link">Quiénes somos</a></li>
+            <li><a href="proyectos.html"     class="nav__link">Proyectos</a></li>
+            <li><a href="galeria.html"       class="nav__link">Galería</a></li>
+          </ul>
+        </nav>
+        <button class="header__hamburguesa" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú mobile -->
+  <nav id="menu-mobile" class="menu-mobile" aria-label="Menú móvil" aria-hidden="true">
+    <ul class="menu-mobile__lista" role="list">
+      <li class="menu-mobile__item"><a href="index.html"         class="menu-mobile__link menu-mobile__link--activo" aria-current="page">Inicio</a></li>
+      <li class="menu-mobile__item"><a href="quienes-somos.html" class="menu-mobile__link">Quiénes somos</a></li>
+      <li class="menu-mobile__item"><a href="proyectos.html"     class="menu-mobile__link">Proyectos</a></li>
+      <li class="menu-mobile__item"><a href="galeria.html"       class="menu-mobile__link">Galería</a></li>
+    </ul>
+    <div class="menu-mobile__footer">
+      <p class="texto-meta">Contacto</p>
+      <a href="mailto:contacto@elpuente.org.ar" style="color: var(--color-texto-claro);">contacto@elpuente.org.ar</a>
+      <div class="redes-sociales">
+        <a href="#" class="icono-red" aria-label="Instagram de El Puente">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido-principal">
+
+    <!-- ORGANISMO: Hero con imagen de fondo -->
+    <section class="hero hero--con-imagen" aria-labelledby="hero-titulo">
+      <div class="contenedor">
+        <div class="hero__inner" >
+          <h1 class="titulo-display" id="hero-titulo">
+            El arte como herramienta<br>de <em>transformación</em> social
+          </h1>
+          <p class="hero__bajada">
+            Somos un colectivo independiente de trabajadores que lleva la cultura donde más hace falta. Talleres en contextos de encierro, proyectos itinerantes y expresiones artísticas que construyen desde el amor y la igualdad.
+          </p>
+          <div class="hero__acciones">
+            <a href="quienes-somos.html" class="boton-accion">Conocé nuestro trabajo</a>
+            <a href="proyectos.html"     class="boton-secundario boton-secundario--claro">Ver proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Sobre la organización — fondo oscuro -->
+    <section class="seccion-oscura" aria-labelledby="sobre-titulo">
+      <div class="contenedor">
+        <header class="seccion__cabecera">
+          <h2 class="titulo-seccion" style="color: var(--color-texto-claro);" id="sobre-titulo">Sobre la organización</h2>
+        </header>
+
+        <div class="sobre-organizacion__grid">
+          <div style="display: flex; flex-direction: column; gap: var(--espacio-md);">
+            <p class="texto-cuerpo" style="color: var(--color-texto-claro);">
+              El Puente Arte y Cultura se desarrolla en la ciudad de La Plata con un fuerte compromiso con los sectores más vulnerables. A través de talleres artísticos, espectáculos e intervenciones culturales, construimos vínculos para crear nuevos mundos posibles.
+            </p>
+            <p class="texto-cuerpo" style="color: var(--color-texto-claro);">
+               Creemos que el acceso a la cultura es un derecho, y que ese derecho se ejerce activamente, especialmente donde el las posibilidades son limitadas.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--espacio-md);">
+              <p class="texto-cuerpo" style="color: var(--color-texto-suave);">
+              Sin sede fija nuestro trabajo se lleva a cabo principalmente en centros cerrados de detención y hogares de niños y adolecentes. Nuestro trabajo no parte de una estructura rígida, sino de la voluntad colectiva de transformar a través del arte.
+            </p>
+            <a href="quienes-somos.html" class="boton-accion" style="align-self: flex-end; margin-top: 1rem;" >Quiénes somos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- SECCIÓN: Proyectos — carrusel automático — fondo claro -->
+    <section class="seccion-clara" aria-labelledby="proyectos-titulo" >
+      <!-- Patrón decorativo -->
+      <svg class="patron-fondo" style="bottom:-30px;left:-50px;width:280px;" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><pattern id="pts2" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#ffffff"/></pattern></defs>
+        <rect width="200" height="200" fill="url(#pts2)"/>
+      </svg>
+
+      <div class="contenedor">
+        <header class="seccion__cabecera">
+          <h2 class="titulo-seccion" style="color:var(--color-texto-oscuro)" id="proyectos-titulo">Proyectos destacados</h2>
+          <p class="seccion__bajada">Lo que hicimos es la prueba de que se puede.</p>
+        </header>
+      </div>
+
+      <!-- Carrusel sin contenedor para ancho completo -->
+      <div class="carrusel-wrapper" style="padding-inline:var(--espacio-md);margin-top:var(--espacio-md)">
+        <div class="carrusel-track" id="carrusel-track">
+
+          <!-- Las tarjetas llevan data-* con la info completa para el modal -->
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-1.jpg"
+            data-etiqueta="Contexto de encierro"
+            data-titulo="Teatro y palabra en el encierro"
+            data-descripcion="Taller de expresión teatral en una unidad penal de menores."
+            data-descripcion-larga="Taller de expresión teatral sostenido en una unidad penal de menores. Los chicos escriben, ensayan y representan sus propias historias como acto de resistencia, visibilización y construcción de identidad. El espacio del taller funciona como un paréntesis dentro del encierro: un lugar donde la palabra propia tiene valor y la escucha es colectiva."
+            data-fecha="2021 — en curso"
+            data-estado="Activo"
+            data-tipo="Taller artístico">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-1.jpg" alt="Teatro y palabra en el encierro">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Contexto de encierro</span>
+              <h3 class="tarjeta-proyecto__titulo">Teatro y palabra en el encierro</h3>
+              <p class="tarjeta-proyecto__descripcion">Taller de expresión teatral en una unidad penal de menores. Los participantes escriben y representan sus propias historias.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2021 — en curso</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-2.jpg"
+            data-etiqueta="Arte y comunidad"
+            data-titulo="Muestra colectiva «Adentro y afuera»"
+            data-descripcion="Exhibición itinerante de obras producidas junto a artistas del colectivo."
+            data-descripcion-larga="Exhibición itinerante de obras realizadas por jovenes privados de libertad junto a artistas del colectivo. La muestra recorrió cinco espacios culturales de La Plata durante 2023. Cada obra lleva el nombre de su autor y una breve descripción de la premisa sobre la cual fue producida."
+            data-fecha="2023"
+            data-estado="Finalizado"
+            data-tipo="Exposición itinerante">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-2.jpg" alt="Muestra colectiva">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Arte y comunidad</span>
+              <h3 class="tarjeta-proyecto__titulo">Muestra colectiva «Adentro y afuera»</h3>
+              <p class="tarjeta-proyecto__descripcion">Exhibición itinerante de obras producidas por jovenes privados de libertad junto a artistas del colectivo.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2023</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-3.jpg"
+            data-etiqueta="Intervención urbana"
+            data-titulo="Por el derecho a la identidad"
+            data-descripcion="Acciones artísticas en el espacio público sobre jóvenes en el sistema penal."
+            data-descripcion-larga="Serie de acciones artísticas en el espacio público para visibilizar la situación de jóvenes en el sistema penal bonaerense. Las intervenciones fueron desarrolladas en plazas y la via publica a traves de imágenes, textos y performances efímeras. El objetivo fue visibilizar la realidad que atraviesan los jovenes desde una perspectiva artistica."
+            data-fecha="2022"
+            data-estado="Finalizado"
+            data-tipo="Intervención urbana">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-3.jpg" alt="Intervención urbana">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Intervención urbana</span>
+              <h3 class="tarjeta-proyecto__titulo">Por el derecho a la identidad</h3>
+              <p class="tarjeta-proyecto__descripcion">Acciones artísticas en el espacio público para visibilizar la situación de jóvenes en el sistema penal bonaerense.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2022</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-4.jpg"
+            data-etiqueta="Contexto de encierro"
+            data-titulo="Artes visuales en unidad penal de adultas"
+            data-descripcion="Ciclo de talleres de pintura, dibujo y serigrafía en una unidad carcelaria."
+            data-descripcion-larga="Ciclo de talleres de pintura, dibujo y serigrafía en una unidad carcelaria de adultas. Las obras producidas fueron parte central de la muestra 'Adentro y afuera'. El taller incorporó técnicas de impresión que permiten reproducir imágenes y distribuirlas fuera del penal, rompiendo físicamente el aislamiento."
+            data-fecha="2022 — 2023"
+            data-estado="Finalizado"
+            data-tipo="Taller artístico">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-4.jpg" alt="Artes visuales">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Contexto de encierro</span>
+              <h3 class="tarjeta-proyecto__titulo">Artes visuales en unidad penal de adultos</h3>
+              <p class="tarjeta-proyecto__descripcion">Ciclo de talleres de pintura, dibujo y serigrafía. Las obras fueron parte de la muestra "Adentro y afuera".</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2022 — 2023</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-5.jpg"
+            data-etiqueta="Arte y comunidad"
+            data-titulo="Festival de artes escénicas populares"
+            data-descripcion="Co-organización de un festival gratuito con grupos de La Plata."
+            data-descripcion-larga="Co-organización de un festival gratuito con grupos de teatro, música y danza de La Plata. Dos ediciones realizadas en 2021 y 2024, con más de 200 asistentes en total. El festival priorizó la participación de artistas independientes que trabajan en la red cultural platense, teniendo como objetivo la accesibilidad de todo el barrio."
+            data-fecha="2021 / 2024"
+            data-estado="Recurrente"
+            data-tipo="Festival">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-5.jpg" alt="Festival escénico">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Arte y comunidad</span>
+              <h3 class="tarjeta-proyecto__titulo">Festival de artes escénicas populares</h3>
+              <p class="tarjeta-proyecto__descripcion">Co-organización de un festival con grupos de teatro, música y danza. Dos ediciones.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2021 / 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-6.jpg"
+            data-etiqueta="Intervención urbana"
+            data-titulo="Mural «Lazos que no se ven»"
+            data-descripcion="Mural colectivo junto a jóvenes del barrio y ex participantes de talleres."
+            data-descripcion-larga="Mural colectivo realizado junto a jóvenes del barrio y ex participantes de talleres en centros de detención. Síntesis visual del vínculo entre adentro y afuera: la imagen fue compuesta a partir de distintas tematicas seleccionadas por los chicos que participaron en la produccion del mural"
+            data-fecha="2024"
+            data-estado="Permanente"
+            data-tipo="Mural">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-6.jpg" alt="Mural colectivo">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Intervención urbana</span>
+              <h3 class="tarjeta-proyecto__titulo">Mural «Lazos que no se ven»</h3>
+              <p class="tarjeta-proyecto__descripcion">Mural colectivo junto a jóvenes del barrio y ex participantes de talleres en centros de detención.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Duplicado para loop continuo -->
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-1.jpg"
+            data-etiqueta="Contexto de encierro"
+            data-titulo="Teatro y palabra en el encierro"
+            data-descripcion="Taller de expresión teatral en una unidad penal de menores."
+            data-descripcion-larga="Taller de expresión teatral sostenido en una unidad penal de menores. Los chicos escriben, ensayan y representan sus propias historias como acto de resistencia, visibilización y construcción de identidad. El espacio del taller funciona como un paréntesis dentro del encierro: un lugar donde la palabra propia tiene valor y la escucha es colectiva."
+            data-fecha="2021 — en curso"
+            data-estado="Activo"
+            data-tipo="Taller artístico">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-1.jpg" alt="Teatro y palabra en el encierro">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Contexto de encierro</span>
+              <h3 class="tarjeta-proyecto__titulo">Teatro y palabra en el encierro</h3>
+              <p class="tarjeta-proyecto__descripcion">Taller de expresión teatral en una unidad penal de menores. Los participantes escriben y representan sus propias historias.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2021 — en curso</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-2.jpg"
+            data-etiqueta="Arte y comunidad"
+            data-titulo="Muestra colectiva «Adentro y afuera»"
+            data-descripcion="Exhibición itinerante de obras producidas junto a artistas del colectivo."
+            data-descripcion-larga="Exhibición itinerante de obras realizadas por jovenes privados de libertad junto a artistas del colectivo. La muestra recorrió cinco espacios culturales de La Plata durante 2023. Cada obra lleva el nombre de su autor y una breve descripción de la premisa sobre la cual fue producida."
+            data-fecha="2023"
+            data-estado="Finalizado"
+            data-tipo="Exposición itinerante">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-2.jpg" alt="Muestra colectiva">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Arte y comunidad</span>
+              <h3 class="tarjeta-proyecto__titulo">Muestra colectiva «Adentro y afuera»</h3>
+              <p class="tarjeta-proyecto__descripcion">Exhibición itinerante de obras producidas por jovenes privados de libertad junto a artistas del colectivo.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2023</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-3.jpg"
+            data-etiqueta="Intervención urbana"
+            data-titulo="Por el derecho a la identidad"
+            data-descripcion="Acciones artísticas en el espacio público sobre jóvenes en el sistema penal."
+            data-descripcion-larga="Serie de acciones artísticas en el espacio público para visibilizar la situación de jóvenes en el sistema penal bonaerense. Las intervenciones fueron desarrolladas en plazas y la via publica a traves de imágenes, textos y performances efímeras. El objetivo fue visibilizar la realidad que atraviesan los jovenes desde una perspectiva artistica."
+            data-fecha="2022"
+            data-estado="Finalizado"
+            data-tipo="Intervención urbana">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-3.jpg" alt="Intervención urbana">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Intervención urbana</span>
+              <h3 class="tarjeta-proyecto__titulo">Por el derecho a la identidad</h3>
+              <p class="tarjeta-proyecto__descripcion">Acciones artísticas en el espacio público para visibilizar la situación de jóvenes en el sistema penal bonaerense.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2022</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-4.jpg"
+            data-etiqueta="Contexto de encierro"
+            data-titulo="Artes visuales en unidad penal de adultas"
+            data-descripcion="Ciclo de talleres de pintura, dibujo y serigrafía en una unidad carcelaria."
+            data-descripcion-larga="Ciclo de talleres de pintura, dibujo y serigrafía en una unidad carcelaria de adultas. Las obras producidas fueron parte central de la muestra 'Adentro y afuera'. El taller incorporó técnicas de impresión que permiten reproducir imágenes y distribuirlas fuera del penal, rompiendo físicamente el aislamiento."
+            data-fecha="2022 — 2023"
+            data-estado="Finalizado"
+            data-tipo="Taller artístico">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-4.jpg" alt="Artes visuales">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Contexto de encierro</span>
+              <h3 class="tarjeta-proyecto__titulo">Artes visuales en unidad penal de adultos</h3>
+              <p class="tarjeta-proyecto__descripcion">Ciclo de talleres de pintura, dibujo y serigrafía. Las obras fueron parte de la muestra "Adentro y afuera".</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2022 — 2023</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-5.jpg"
+            data-etiqueta="Arte y comunidad"
+            data-titulo="Festival de artes escénicas populares"
+            data-descripcion="Co-organización de un festival gratuito con grupos de La Plata."
+            data-descripcion-larga="Co-organización de un festival gratuito con grupos de teatro, música y danza de La Plata. Dos ediciones realizadas en 2021 y 2024, con más de 200 asistentes en total. El festival priorizó la participación de artistas independientes que trabajan en la red cultural platense, teniendo como objetivo la accesibilidad de todo el barrio."
+            data-fecha="2021 / 2024"
+            data-estado="Recurrente"
+            data-tipo="Festival">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-5.jpg" alt="Festival escénico">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Arte y comunidad</span>
+              <h3 class="tarjeta-proyecto__titulo">Festival de artes escénicas populares</h3>
+              <p class="tarjeta-proyecto__descripcion">Co-organización de un festival con grupos de teatro, música y danza. Dos ediciones.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2021 / 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto"
+            data-img="assets/proyecto-6.jpg"
+            data-etiqueta="Intervención urbana"
+            data-titulo="Mural «Lazos que no se ven»"
+            data-descripcion="Mural colectivo junto a jóvenes del barrio y ex participantes de talleres."
+            data-descripcion-larga="Mural colectivo realizado junto a jóvenes del barrio y ex participantes de talleres en centros de detención. Síntesis visual del vínculo entre adentro y afuera: la imagen fue compuesta a partir de distintas tematicas seleccionadas por los chicos que participaron en la produccion del mural"
+            data-fecha="2024"
+            data-estado="Permanente"
+            data-tipo="Mural">
+            <img class="tarjeta-proyecto__imagen" src="assets/proyecto-6.jpg" alt="Mural colectivo">
+            <div class="tarjeta-proyecto__contenido">
+              <span class="etiqueta">Intervención urbana</span>
+              <h3 class="tarjeta-proyecto__titulo">Mural «Lazos que no se ven»</h3>
+              <p class="tarjeta-proyecto__descripcion">Mural colectivo junto a jóvenes del barrio y ex participantes de talleres en centros de detención.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2024</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /carrusel-track -->
+      </div><!-- /carrusel-wrapper -->
+
+      <div class="contenedor" style="text-align:center;margin-top:var(--espacio-lg)">
+        <a href="proyectos.html" class="boton-accion">Ver todos los proyectos</a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- MODAL de proyecto -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal">
+      <button class="modal__cerrar" id="modal-cerrar" aria-label="Cerrar">✕</button>
+      <img class="modal__imagen" id="modal-img" src="" alt="">
+      <div class="modal__cuerpo">
+        <span class="etiqueta" id="modal-etiqueta"></span>
+        <h2 class="modal__titulo" id="modal-titulo"></h2>
+        <p class="modal__descripcion" id="modal-descripcion"></p>
+        <div class="modal__datos">
+          <div class="modal__dato">
+            <span class="modal__dato-label">Período</span>
+            <span class="modal__dato-valor" id="modal-fecha"></span>
+          </div>
+          <div class="modal__dato">
+            <span class="modal__dato-label">Estado</span>
+            <span class="modal__dato-valor" id="modal-estado"></span>
+          </div>
+          <div class="modal__dato">
+            <span class="modal__dato-label">Tipo</span>
+            <span class="modal__dato-valor" id="modal-tipo"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 4px; background: var(--degradado-isotipo);"></div>
+
+  <!-- ORGANISMO: Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="contenedor">
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__logo">
+            <img src="assets/logo.png" alt="El Puente Arte y Cultura">
+          </div>
+          <p class="footer__descripcion">Colectivo de trabajadores que usa el arte como herramienta de transformación social. La Plata, Buenos Aires.</p>
+          <div class="redes-sociales" style="margin-top: var(--espacio-md);">
+            <a href="#" class="icono-red" aria-label="Instagram de El Puente">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Navegación del footer">
+          <p class="footer__titulo-columna">Secciones</p>
+          <ul class="footer__nav-lista" role="list">
+            <li><a href="index.html"         class="footer__nav-link">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="footer__nav-link">Quiénes somos</a></li>
+            <li><a href="proyectos.html"     class="footer__nav-link">Proyectos</a></li>
+            <li><a href="galeria.html"       class="footer__nav-link">Galería</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <p class="footer__titulo-columna">Contacto</p>
+          <div class="contacto">
+            <div class="bloque-contacto">
+              <span class="bloque-contacto__icono" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div class="bloque-contacto__texto">
+                <a href="mailto:contacto@elpuente.org.ar">elpuentearteycultura@gmail.com</a>
+              </div>
+            </div>
+            <div class="bloque-contacto">
+              <span class="bloque-contacto__icono" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </span>
+              <div class="bloque-contacto__texto">
+                <a href="#">@elpuentearteycultura</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr class="footer__divisor">
+      <p class="footer__credito">© 2026 El Puente Arte y Cultura</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>
