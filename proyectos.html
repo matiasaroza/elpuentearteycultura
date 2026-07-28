@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos — El Puente Arte y Cultura</title>
+  <meta name="description" content="Proyectos y actividades culturales de El Puente Arte y Cultura.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="contenedor">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="El Puente Arte y Cultura — Inicio">
+          <img src="assets/logo.png" alt="El Puente Arte y Cultura">
+        </a>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <ul class="nav__lista" role="list">
+            <li><a href="index.html"         class="nav__link">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="nav__link">Quiénes somos</a></li>
+            <li><a href="proyectos.html"     class="nav__link nav__link--activo" aria-current="page">Proyectos</a></li>
+            <li><a href="galeria.html"       class="nav__link">Galería</a></li>
+          </ul>
+        </nav>
+        <button class="header__hamburguesa" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="menu-mobile" class="menu-mobile" aria-label="Menú móvil" aria-hidden="true">
+    <ul class="menu-mobile__lista" role="list">
+      <li class="menu-mobile__item"><a href="index.html"         class="menu-mobile__link">Inicio</a></li>
+      <li class="menu-mobile__item"><a href="quienes-somos.html" class="menu-mobile__link">Quiénes somos</a></li>
+      <li class="menu-mobile__item"><a href="proyectos.html"     class="menu-mobile__link menu-mobile__link--activo" aria-current="page">Proyectos</a></li>
+      <li class="menu-mobile__item"><a href="galeria.html"       class="menu-mobile__link">Galería</a></li>
+    </ul>
+    <div class="menu-mobile__footer">
+      <p class="texto-meta">Contacto</p>
+      <a href="mailto:contacto@elpuente.org.ar" style="color: var(--color-texto-claro);">contacto@elpuente.org.ar</a>
+    </div>
+  </nav>
+
+  <main id="contenido-principal">
+
+      <!-- HERO interior — fondo claro con detalle -->
+    <section class="hero hero--interior hero--pequeño" aria-labelledby="hero-titulo">
+      <div class="hero__acento-barra" aria-hidden="true"></div>
+      <!-- Patrón decorativo -->
+      <svg class="hero__patron" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><pattern id="p-p" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#023062"/></pattern></defs>
+        <rect width="200" height="200" fill="url(#p-qs)"/>
+      </svg>
+      <div class="contenedor">
+        <div class="hero__inner">
+          <h1 class="titulo-display" id="proyectos-titulo">Nuestros <em>proyectos</em></h1>
+          <p class="hero__bajada">El registro de lo que hicimos es también la prueba de que se puede.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="seccion-clara" aria-labelledby="grilla-titulo">
+      <div class="contenedor">
+        <h2 class="titulo-seccion" style="color: var(--color-texto-oscuro); margin-bottom: var(--espacio-md);" id="grilla-titulo">Todos los proyectos</h2>
+
+        <!-- Molécula: bloque de categorías -->
+        <div class="bloque-categorias" role="group" aria-label="Filtrar por categoría">
+          <button class="categoria-btn categoria-btn--activo" data-filtro="todos">Todos</button>
+          <button class="categoria-btn" data-filtro="contexto-de-encierro">Contexto de encierro</button>
+          <button class="categoria-btn" data-filtro="arte-y-comunidad">Arte y comunidad</button>
+          <button class="categoria-btn" data-filtro="intervencion-urbana">Intervención urbana</button>
+        </div>
+
+        <ul class="grilla-proyectos" role="list" id="grilla-proyectos">
+
+          <li data-categoria="contexto-de-encierro">
+            <article class="tarjeta-proyecto">
+              <div class="tarjeta-proyecto__inner">
+                <img class="tarjeta-proyecto__imagen" src="assets/proyecto-1.jpg" alt="Taller de teatro en centro de detención">
+                <div class="tarjeta-proyecto__contenido">
+                  <span class="etiqueta">Contexto de encierro</span>
+              <h3 class="tarjeta-proyecto__titulo">Teatro y palabra en el encierro</h3>
+              <p class="tarjeta-proyecto__descripcion">Taller de expresión teatral en una unidad penal de menores. Los participantes escriben y representan sus propias historias.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2021 — en curso</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li data-categoria="arte-y-comunidad">
+            <article class="tarjeta-proyecto">
+              <div class="tarjeta-proyecto__inner">
+                <img class="tarjeta-proyecto__imagen" src="assets/proyecto-2.jpg" alt="Muestra colectiva de arte">
+                <div class="tarjeta-proyecto__contenido">
+                  <span class="etiqueta">Arte y comunidad</span>
+              <h3 class="tarjeta-proyecto__titulo">Muestra colectiva «Adentro y afuera»</h3>
+              <p class="tarjeta-proyecto__descripcion">Exhibición itinerante de obras producidas por jovenes privados de libertad junto a artistas del colectivo. Recorrió cinco espacios culturales de La Plata.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2023</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li data-categoria="intervencion-urbana">
+            <article class="tarjeta-proyecto">
+              <div class="tarjeta-proyecto__inner">
+                <img class="tarjeta-proyecto__imagen" src="assets/proyecto-3.jpg" alt="Intervención artística urbana">
+                <div class="tarjeta-proyecto__contenido">
+                  <span class="etiqueta">Intervención urbana</span>
+              <h3 class="tarjeta-proyecto__titulo">Por el derecho a la identidad</h3>
+              <p class="tarjeta-proyecto__descripcion">Serie de acciones artísticas en el espacio público para visibilizar la situación de jóvenes en el sistema penal bonaerense.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2022</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li data-categoria="contexto-de-encierro">
+            <article class="tarjeta-proyecto">
+              <div class="tarjeta-proyecto__inner">
+                <img class="tarjeta-proyecto__imagen" src="assets/proyecto-4.jpg" alt="Taller de artes visuales">
+                <div class="tarjeta-proyecto__contenido">
+                  <span class="etiqueta">Contexto de encierro</span>
+              <h3 class="tarjeta-proyecto__titulo">Artes visuales en unidad penal de adultos</h3>
+              <p class="tarjeta-proyecto__descripcion">Ciclo de talleres de pintura, dibujo y serigrafía. Las obras producidas fueron parte de la muestra "Adentro y afuera".</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2022 — 2023</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li data-categoria="arte-y-comunidad">
+            <article class="tarjeta-proyecto">
+              <div class="tarjeta-proyecto__inner">
+                <img class="tarjeta-proyecto__imagen" src="assets/proyecto-5.jpg" alt="Festival de artes escénicas">
+                <div class="tarjeta-proyecto__contenido">
+                  <span class="etiqueta">Arte y comunidad</span>
+              <h3 class="tarjeta-proyecto__titulo">Festival de artes escénicas populares</h3>
+              <p class="tarjeta-proyecto__descripcion">Co-organización de un festival con grupos de teatro, música y danza. Dos ediciones.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2021 / 2024</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li data-categoria="intervencion-urbana">
+            <article class="tarjeta-proyecto">
+              <div class="tarjeta-proyecto__inner">
+                <img class="tarjeta-proyecto__imagen" src="assets/proyecto-6.jpg" alt="Mural colectivo">
+                <div class="tarjeta-proyecto__contenido">
+                  <span class="etiqueta">Intervención urbana</span>
+              <h3 class="tarjeta-proyecto__titulo">Mural «Lazos que no se ven»</h3>
+              <p class="tarjeta-proyecto__descripcion">Mural colectivo junto a jóvenes del barrio y ex participantes de talleres en centros de detención.</p>
+              <div class="tarjeta-proyecto__pie">
+                <span class="texto-meta" style="color:#999">2024</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+<div style="height: 4px; background: var(--degradado-isotipo);"></div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="contenedor">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo"><img src="assets/logo.png" alt="El Puente Arte y Cultura"></div>
+          <p class="footer__descripcion">Colectivo de trabajadores que usa el arte como herramienta de transformación social. La Plata, Buenos Aires.</p>
+          <div class="redes-sociales" style="margin-top: var(--espacio-md);">
+            <a href="#" class="icono-red" aria-label="Instagram de El Puente">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav aria-label="Navegación del footer">
+          <p class="footer__titulo-columna">Secciones</p>
+          <ul class="footer__nav-lista" role="list">
+            <li><a href="index.html"         class="footer__nav-link">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="footer__nav-link">Quiénes somos</a></li>
+            <li><a href="proyectos.html"     class="footer__nav-link">Proyectos</a></li>
+            <li><a href="galeria.html"       class="footer__nav-link">Galería</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer__titulo-columna">Contacto</p>
+          <div class="contacto">
+            <div class="bloque-contacto">
+              <span class="bloque-contacto__icono" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div class="bloque-contacto__texto"><a href="mailto:contacto@elpuente.org.ar">elpuentearteycultura@gmail.com</a>
+              </div>
+            </div>
+            <div class="bloque-contacto">
+              <span class="bloque-contacto__icono" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </span>
+              <div class="bloque-contacto__texto">
+                <a href="#">@elpuentearteycultura</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="footer__divisor">
+      <p class="footer__credito">© 2026 El Puente Arte y Cultura</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script>
+    // Filtros de proyectos
+    const botones = document.querySelectorAll('.categoria-btn');
+    const items   = document.querySelectorAll('#grilla-proyectos li');
+
+    botones.forEach(btn => {
+      btn.addEventListener('click', () => {
+        botones.forEach(b => b.classList.remove('categoria-btn--activo'));
+        btn.classList.add('categoria-btn--activo');
+        const filtro = btn.dataset.filtro;
+        items.forEach(item => {
+          item.hidden = filtro !== 'todos' && item.dataset.categoria !== filtro;
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
